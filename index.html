@@ -9,12 +9,37 @@
           fill-opacity: 0.5; 
           stroke: rgb(250, 253, 250);
        }
+
+       .cabecalho, .rodape {
+        background-color: rgb(146, 149, 150);
+        border: 2px solid rgb(252, 250, 250);
+        border-radius: 5px;
+        padding-top: 10px;
+        position: relative;
+        color: rgb(249, 250, 249);
+       
+        font-family: 'Courier New', Courier, monospace;
+       }
+
+       .cabecalho {
+        text-align: center;
+       }
+
+       .main { 
+          width: 900px; 
+          margin-left: auto;
+          margin-right: auto; 
+      }
       </style>
       
     </head>
-    <body>
+    <div class="main">
+      <header class="cabecalho">
+        <h2>Universidade Federal do Acre</h2>
+      </header> 
+      <body>
         <div class="painel">
-          <svg viewBox="0 0 500 500" width="500" height="500">
+          <svg viewBox="0 0 500 500" width="900" height="900">
             <defs>
               <radialGradient gradientUnits="userSpaceOnUse" cx="655.075" cy="310.389" r="14.974" id="gradient-1">
                 <stop offset="0" style="stop-color: rgba(210, 37, 37, 1)"></stop>
@@ -334,8 +359,15 @@
           </svg>
             
         </div>
-
+  
         <script src="scripts/controller/ParkController.js"></script>
         <script src="scripts/parking.js"></script>
-    </body>
+      </body>
+      <footer class="rodape">
+        <p>Total de Vagas: <b>bold</b></p>
+        <p>Vagas monitoradas: <b>bold</b></p>
+        <p>LIvres: <b>bold</b></p>
+      </footer>
+    </div>
+    
 </html>
